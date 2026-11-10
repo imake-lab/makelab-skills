@@ -1,0 +1,233 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1610" height="970" viewBox="0 0 1610 970" font-family="'PingFang SC','Noto Sans CJK SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/>
+    </marker>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#E8692E"/>
+    </marker>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8A9AAB"/>
+    </marker>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#1F4E79" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <!-- 背景 -->
+  <rect x="0" y="0" width="1610" height="970" fill="#FBF7F0"/>
+
+  <!-- 标题 -->
+  <text x="40" y="54" font-size="30" font-weight="700" fill="#1F4E79">legacy-takeover 架构</text>
+  <text x="40" y="84" font-size="15" fill="#6B6B6B">一句话触发 · AI 按规程自主执行 · 默认只读 · 产出全部在 make-skill-legacy-takeover-output/ · 只在真正需要人的地方停下</text>
+
+  <!-- ========== 第一行：触发 → 入口 ========== -->
+  <rect x="40" y="110" width="300" height="84" rx="12" fill="#FCD86B" stroke="#C77700" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="60" y="140" font-size="18" font-weight="700" fill="#5A3D00">你说一句话</text>
+  <text x="60" y="164" font-size="13.5" fill="#5A3D00">接手这个项目 ｜ 改造：&lt;需求&gt;</text>
+  <text x="60" y="184" font-size="13.5" fill="#5A3D00">基于开源做需求 ｜ 给项目提 PR</text>
+
+  <line x1="342" y1="152" x2="396" y2="152" stroke="#1F4E79" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+  <rect x="400" y="110" width="890" height="84" rx="12" fill="#1F4E79" filter="url(#shadow)"/>
+  <text x="424" y="142" font-size="19" font-weight="700" fill="#FFFFFF">SKILL.md<tspan dx="12" font-size="15" font-weight="400" fill="#C9DBEC">入口规程</tspan></text>
+  <text x="424" y="174" font-size="14" fill="#E6EEF6">判断模式 · 运行方式：默认只读 · 自主原则 · 只有人知道的事 · 安全措施 · 交付物 · 总说明</text>
+
+  <line x1="845" y1="196" x2="845" y2="222" stroke="#1F4E79" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+  <!-- ========== 第二行：执行规格 ========== -->
+  <rect x="40" y="226" width="1250" height="266" rx="14" fill="#FFFFFF" stroke="#D9CBB5" stroke-width="1.5"/>
+  <text x="60" y="254" font-size="15" font-weight="700" fill="#1F4E79">references/<tspan dx="10" font-weight="400" fill="#6B6B6B">执行规格 · 按需加载</tspan></text>
+
+  <!-- A -->
+  <rect x="60" y="268" width="230" height="146" rx="10" fill="#EAF1F8" stroke="#1F4E79" stroke-width="1.2"/>
+  <text x="76" y="296" font-size="17" font-weight="700" fill="#1F4E79">A　摸项目</text>
+  <text x="76" y="324" font-size="13.5" fill="#333">应用架构 · 技术架构 · 模块依赖</text>
+  <text x="76" y="348" font-size="13.5" fill="#333">模块说明 · 接口清单 · 数据模型</text>
+  <text x="76" y="372" font-size="13.5" fill="#333">风险地带 · ER · 时序 · 疑点</text>
+  <text x="76" y="396" font-size="13.5" fill="#333">CLAUDE.md · docs-auto-sync</text>
+
+  <line x1="291" y1="341" x2="303" y2="341" stroke="#1F4E79" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+  <!-- B -->
+  <rect x="305" y="268" width="230" height="146" rx="10" fill="#EAF1F8" stroke="#1F4E79" stroke-width="1.2"/>
+  <text x="321" y="296" font-size="17" font-weight="700" fill="#1F4E79">B　建护栏</text>
+  <text x="321" y="324" font-size="13.5" fill="#333">依赖清单 · 环境脚本 · 上手步骤</text>
+  <text x="321" y="348" font-size="13.5" fill="#333">核心链路 ≤8 · 测试摸底</text>
+  <text x="321" y="372" font-size="13.5" fill="#333">P0 缺口 5–10 · 补测试计划</text>
+  <text x="321" y="396" font-size="13.5" fill="#333">CI 配置（只生成不推送）</text>
+
+  <line x1="536" y1="341" x2="548" y2="341" stroke="#1F4E79" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+  <!-- C -->
+  <rect x="550" y="268" width="230" height="146" rx="10" fill="#EAF1F8" stroke="#1F4E79" stroke-width="1.2"/>
+  <text x="566" y="296" font-size="17" font-weight="700" fill="#1F4E79">C　做改造</text>
+  <text x="566" y="324" font-size="13.5" fill="#E8692E" font-weight="700">现状确认（改代码前问一次）</text>
+  <text x="566" y="348" font-size="13.5" fill="#333">六维需求 · 七节方案</text>
+  <text x="566" y="372" font-size="13.5" fill="#333">跑起来才改：锁行为 · 小步提交</text>
+  <text x="566" y="396" font-size="13.5" fill="#333">独立 review · curl · 回灌</text>
+
+  <!-- 分隔：独立模式 -->
+  <line x1="787" y1="276" x2="787" y2="406" stroke="#D9CBB5" stroke-width="1.5" stroke-dasharray="5,5"/>
+
+  <!-- D -->
+  <rect x="795" y="268" width="230" height="146" rx="10" fill="#F2F5F9" stroke="#8A9AAB" stroke-width="1.2"/>
+  <text x="811" y="296" font-size="17" font-weight="700" fill="#1F4E79">D　二次开发</text>
+  <text x="811" y="324" font-size="13.5" fill="#333">学习框架 · 两次翻译</text>
+  <text x="811" y="348" font-size="13.5" fill="#E8692E" font-weight="700">路径反问（问你一次）</text>
+  <text x="811" y="372" font-size="13.5" fill="#333">代码层 · 整体点评</text>
+  <text x="811" y="396" font-size="13.5" fill="#333">先手动跑通，再启调度</text>
+
+  <!-- E -->
+  <rect x="1040" y="268" width="230" height="146" rx="10" fill="#F2F5F9" stroke="#8A9AAB" stroke-width="1.2"/>
+  <text x="1056" y="296" font-size="17" font-weight="700" fill="#1F4E79">E　挑战开源</text>
+  <text x="1056" y="324" font-size="13.5" fill="#333">项目地图 · 筛 issue</text>
+  <text x="1056" y="348" font-size="13.5" fill="#E8692E" font-weight="700">选项目 / issue / plan</text>
+  <text x="1056" y="372" font-size="13.5" fill="#333">两个 PR · 一个 issue</text>
+  <text x="1056" y="396" font-size="13.5" fill="#333">push 和提交由你执行</text>
+
+  <text x="60" y="434" font-size="12.5" fill="#8A7A62">主线：A → B → C（改造模式缺资产时先补 A、B）</text>
+  <text x="795" y="434" font-size="12.5" fill="#8A7A62">独立模式：在别人的开源项目上工作</text>
+
+  <!-- 支撑条 -->
+  <rect x="60" y="444" width="390" height="34" rx="8" fill="#F4EEE3" stroke="#D9CBB5"/>
+  <text x="76" y="466" font-size="13.5" fill="#1F4E79"><tspan font-weight="700">00-methodology</tspan><tspan dx="10" fill="#555">九步链路 · 三档分工 · 三层控制</tspan></text>
+  <rect x="465" y="444" width="390" height="34" rx="8" fill="#F4EEE3" stroke="#D9CBB5"/>
+  <text x="481" y="466" font-size="13.5" fill="#1F4E79"><tspan font-weight="700">06-skill-mining</tspan><tspan dx="10" fill="#555">三特征 · Top 3 · 触发测试</tspan></text>
+  <rect x="870" y="444" width="400" height="34" rx="8" fill="#F4EEE3" stroke="#D9CBB5"/>
+  <text x="886" y="466" font-size="13.5" fill="#1F4E79"><tspan font-weight="700">stack-map</tspan><tspan dx="10" fill="#555">7 种技术栈的命令对照</tspan></text>
+
+  <!-- 连接到资源 -->
+  <line x1="240" y1="494" x2="240" y2="520" stroke="#1F4E79" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <line x1="665" y1="494" x2="665" y2="520" stroke="#1F4E79" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <line x1="1090" y1="494" x2="1090" y2="520" stroke="#1F4E79" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+  <!-- ========== 第三行：资源 ========== -->
+  <rect x="40" y="524" width="400" height="76" rx="12" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="60" y="554" font-size="16" font-weight="700" fill="#1F4E79">templates/<tspan dx="10" font-weight="400" font-size="14" fill="#333">产出模板 · 画图底稿</tspan></text>
+  <text x="60" y="580" font-size="13" fill="#6B6B6B">总说明 · 1–4 号文档 · dev-env.sh · apply.sh · diagram-base.svg</text>
+
+  <rect x="465" y="524" width="400" height="76" rx="12" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="485" y="554" font-size="16" font-weight="700" fill="#1F4E79">assets/project-skills/</text>
+  <text x="485" y="580" font-size="13" fill="#6B6B6B">装进项目的技能：docs-auto-sync · env-bootstrap</text>
+
+  <rect x="890" y="524" width="400" height="76" rx="12" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="910" y="554" font-size="16" font-weight="700" fill="#1F4E79">scripts/check_takeover.py</text>
+  <text x="910" y="580" font-size="13" fill="#6B6B6B">交付物自检 · 只读 · 标准库 · 带单元测试</text>
+
+  <!-- 连接到项目 -->
+  <line x1="240" y1="602" x2="240" y2="652" stroke="#E8692E" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow-orange)"/>
+  <text x="252" y="632" font-size="13" fill="#E8692E" font-weight="700">生成</text>
+  <line x1="665" y1="602" x2="665" y2="652" stroke="#E8692E" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow-orange)"/>
+  <text x="677" y="632" font-size="13" fill="#E8692E" font-weight="700">写入 apply/</text>
+  <line x1="1090" y1="602" x2="1090" y2="652" stroke="#E8692E" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow-orange)"/>
+  <text x="1102" y="632" font-size="13" fill="#E8692E" font-weight="700">只读核对</text>
+
+  <!-- ========== 第四行：统一产出目录 ========== -->
+  <rect x="40" y="656" width="1250" height="232" rx="14" fill="#FFF4E8" stroke="#E8692E" stroke-width="1.5"/>
+  <text x="60" y="684" font-size="15" font-weight="700" fill="#E8692E">make-skill-legacy-takeover-output/<tspan dx="12" font-weight="400" fill="#8A6A4A">所有产出都在这一个文件夹里 · 默认只读，不改项目</tspan></text>
+
+  <g font-size="13" fill="#555">
+    <rect x="60" y="700" width="290" height="74" rx="8" fill="#FFFFFF" stroke="#E8692E" stroke-width="1.5"/>
+    <text x="76" y="730" font-size="15.5" font-weight="700" fill="#E8692E">README.md<tspan dx="8" font-size="13" font-weight="400" fill="#8A6A4A">总说明</tspan></text>
+    <text x="76" y="756">做了什么 · 要你做的事 · 产出作用</text>
+
+    <rect x="366" y="700" width="290" height="74" rx="8" fill="#FFFFFF" stroke="#E8C9A8"/>
+    <text x="382" y="730" font-size="15.5" font-weight="700" fill="#1F4E79">1-project-map.md<tspan dx="8" font-size="13" font-weight="400" fill="#555">项目地图</tspan></text>
+    <text x="382" y="756">架构 · 模块 · 风险地带 · 接口</text>
+
+    <rect x="672" y="700" width="290" height="74" rx="8" fill="#FFFFFF" stroke="#E8C9A8"/>
+    <text x="688" y="730" font-size="15.5" font-weight="700" fill="#1F4E79">2-dev-setup.md<tspan dx="8" font-size="13" font-weight="400" fill="#555">环境手册</tspan></text>
+    <text x="688" y="756">依赖清单 · 上手步骤 · 安装与冒烟</text>
+
+    <rect x="978" y="700" width="292" height="74" rx="8" fill="#FFFFFF" stroke="#E8C9A8"/>
+    <text x="994" y="730" font-size="15.5" font-weight="700" fill="#1F4E79">3-test-guard.md<tspan dx="8" font-size="13" font-weight="400" fill="#555">测试护栏</tspan></text>
+    <text x="994" y="756">核心链路 · 缺口 · 补测试计划 · CI</text>
+
+    <rect x="60" y="790" width="290" height="74" rx="8" fill="#FFFFFF" stroke="#E8C9A8"/>
+    <text x="76" y="820" font-size="15.5" font-weight="700" fill="#1F4E79">4-change-&lt;需求&gt;.md<tspan dx="8" font-size="13" font-weight="400" fill="#555">改造</tspan></text>
+    <text x="76" y="846">需求 · 方案 · 独立 review · 验证</text>
+
+    <rect x="366" y="790" width="290" height="74" rx="8" fill="#FFFFFF" stroke="#E8C9A8"/>
+    <text x="382" y="820" font-size="15.5" font-weight="700" fill="#1F4E79">diagrams/ · scripts/</text>
+    <text x="382" y="846">全部 SVG · dev-env.sh 一个脚本</text>
+
+    <rect x="672" y="790" width="290" height="74" rx="8" fill="#FCD86B" stroke="#C77700" stroke-width="1.5"/>
+    <text x="688" y="820" font-size="15.5" font-weight="700" fill="#5A3D00">apply/<tspan dx="8" font-size="13" font-weight="400" fill="#5A3D00">你确认后运行 apply.sh</tspan></text>
+    <text x="688" y="846" fill="#5A3D00">CLAUDE.md · 项目技能 · CI 配置</text>
+
+    <rect x="978" y="790" width="292" height="74" rx="8" fill="#F2F5F9" stroke="#8A9AAB" stroke-dasharray="5,4"/>
+    <text x="994" y="820" font-size="15.5" font-weight="700" fill="#1F4E79">代码与测试<tspan dx="8" font-size="13" font-weight="400" fill="#555">默认不动</tspan></text>
+    <text x="994" y="846">说「跑起来」才改 · 按批本地提交</text>
+  </g>
+
+  <!-- ========== 右侧：三层控制 ========== -->
+  <rect x="1320" y="110" width="250" height="372" rx="14" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="1340" y="140" font-size="16" font-weight="700" fill="#1F4E79">三层控制</text>
+  <text x="1430" y="140" font-size="12.5" fill="#6B6B6B">贯穿所有阶段</text>
+
+  <rect x="1340" y="158" width="196" height="84" rx="10" fill="#EAF1F8" stroke="#1F4E79"/>
+  <text x="1354" y="186" font-size="15" font-weight="700" fill="#1F4E79">理解层 · 让 AI 看见</text>
+  <text x="1354" y="210" font-size="12.5" fill="#444">全景图 · 接口 · 数据模型</text>
+  <text x="1354" y="230" font-size="12.5" fill="#444">风险地带 · ER · 时序 · 疑点</text>
+
+  <line x1="1438" y1="244" x2="1438" y2="262" stroke="#1F4E79" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+  <rect x="1340" y="266" width="196" height="84" rx="10" fill="#EAF1F8" stroke="#1F4E79"/>
+  <text x="1354" y="294" font-size="15" font-weight="700" fill="#1F4E79">约束层 · 让 AI 听话</text>
+  <text x="1354" y="318" font-size="12.5" fill="#444">CLAUDE.md · 项目技能</text>
+  <text x="1354" y="338" font-size="12.5" fill="#444">每一步的动态约束</text>
+
+  <line x1="1438" y1="352" x2="1438" y2="370" stroke="#1F4E79" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+  <rect x="1340" y="374" width="196" height="84" rx="10" fill="#EAF1F8" stroke="#1F4E79"/>
+  <text x="1354" y="402" font-size="15" font-weight="700" fill="#1F4E79">验证层 · 让 AI 可信</text>
+  <text x="1354" y="426" font-size="12.5" fill="#444">Characterization Test</text>
+  <text x="1354" y="446" font-size="12.5" fill="#444">CI · curl 对照 · 独立 review</text>
+
+  <path d="M1538,416 C1560,416 1560,200 1540,200" fill="none" stroke="#8A9AAB" stroke-width="1.8" stroke-dasharray="5,4" marker-end="url(#arrow-gray)"/>
+  <text x="1340" y="474" font-size="12" fill="#8A9AAB">↺ 验证暴露的边角场景，反哺理解</text>
+
+  <!-- ========== 右侧：人的介入 ========== -->
+  <rect x="1320" y="502" width="250" height="386" rx="14" fill="#FFFBEA" stroke="#C77700" stroke-width="1.5"/>
+  <text x="1340" y="532" font-size="16" font-weight="700" fill="#C77700">只在这里问你</text>
+  <g font-size="13" fill="#4A3A1A">
+    <circle cx="1346" cy="557" r="4" fill="#E8692E"/>
+    <text x="1358" y="562">改代码前：功能已存在吗</text>
+    <circle cx="1346" cy="583" r="4" fill="#E8692E"/>
+    <text x="1358" y="588">二次开发：路径选对了吗</text>
+    <circle cx="1346" cy="609" r="4" fill="#E8692E"/>
+    <text x="1358" y="614">开源：选项目、issue、plan</text>
+  </g>
+
+  <line x1="1340" y1="636" x2="1550" y2="636" stroke="#E6D3A8" stroke-width="1"/>
+
+  <text x="1340" y="664" font-size="16" font-weight="700" fill="#C77700">统一收进总说明</text>
+  <g font-size="13" fill="#4A3A1A">
+    <circle cx="1346" cy="689" r="4" fill="#FCD86B" stroke="#C77700"/>
+    <text x="1358" y="694">禁区、历史包袱（AI 不编）</text>
+    <circle cx="1346" cy="715" r="4" fill="#FCD86B" stroke="#C77700"/>
+    <text x="1358" y="720">需求与方案里的 AI 推荐</text>
+    <circle cx="1346" cy="741" r="4" fill="#FCD86B" stroke="#C77700"/>
+    <text x="1358" y="746">测试断言是否凭实际</text>
+    <circle cx="1346" cy="767" r="4" fill="#FCD86B" stroke="#C77700"/>
+    <text x="1358" y="772">亲手复验接口和页面</text>
+    <circle cx="1346" cy="793" r="4" fill="#FCD86B" stroke="#C77700"/>
+    <text x="1358" y="798">push、CI、sudo 命令</text>
+  </g>
+  <text x="1340" y="840" font-size="12.5" fill="#8A6A4A">其余全部由 AI 自主推进</text>
+  <text x="1340" y="862" font-size="12.5" fill="#8A6A4A">同一错误修 3 次不成就停</text>
+
+  <!-- ========== 图例与页脚 ========== -->
+  <g font-size="12.5" fill="#6B6B6B">
+    <rect x="40" y="916" width="16" height="16" rx="4" fill="#1F4E79"/>
+    <text x="64" y="929">规程与执行规格</text>
+    <rect x="190" y="916" width="16" height="16" rx="4" fill="#FFF4E8" stroke="#E8692E"/>
+    <text x="214" y="929">产出目录</text>
+    <rect x="340" y="916" width="16" height="16" rx="4" fill="#FCD86B" stroke="#C77700"/>
+    <text x="364" y="929">需要你参与</text>
+    <line x1="470" y1="924" x2="510" y2="924" stroke="#E8692E" stroke-width="2" stroke-dasharray="6,4"/>
+    <text x="518" y="929">生成 / 写入 / 核对</text>
+  </g>
+  <text x="1570" y="929" font-size="12.5" fill="#8A9AAB" text-anchor="end">imake-lab/make-skills · MIT</text>
+</svg>

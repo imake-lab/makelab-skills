@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" font-family="'PingFang SC','Noto Sans CJK SC','Microsoft YaHei',sans-serif">
+  <!-- legacy-takeover 画图底稿。复制后改画布大小、标题、节点和连线。规范见 references/svg-diagrams.md -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/>
+    </marker>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#E8692E"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#D64545"/>
+    </marker>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#1F4E79" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      .title    { font-size:28px; font-weight:700; fill:#1F4E79; }
+      .subtitle { font-size:14px; fill:#6B6B6B; }
+      .group    { fill:#FFFFFF; stroke:#D9CBB5; stroke-width:1.5; }
+      .group-t  { font-size:15px; font-weight:700; fill:#1F4E79; }
+      .core     { fill:#EAF1F8; stroke:#1F4E79; stroke-width:1.2; }
+      .main     { fill:#1F4E79; }
+      .infra    { fill:#F4EEE3; stroke:#D9CBB5; stroke-width:1.2; }
+      .ext      { fill:#FFF4E8; stroke:#E8692E; stroke-width:1.2; }
+      .warn     { fill:#FCD86B; stroke:#C77700; stroke-width:1.5; }
+      .name     { font-size:15px; font-weight:700; fill:#1F4E79; }
+      .name-w   { font-size:15px; font-weight:700; fill:#FFFFFF; }
+      .desc     { font-size:13px; fill:#444444; }
+      .desc-w   { font-size:13px; fill:#E6EEF6; }
+      .edge     { stroke:#1F4E79; stroke-width:1.8; fill:none; }
+      .edge-a   { stroke:#8A9AAB; stroke-width:1.6; fill:none; stroke-dasharray:6,4; }
+      .edge-c   { stroke:#D64545; stroke-width:2; fill:none; }
+      .label    { font-size:12px; fill:#6B6B6B; }
+      .source   { font-size:12px; fill:#8A9AAB; }
+    </style>
+  </defs>
+
+  <rect width="1400" height="900" fill="#FBF7F0"/>
+
+  <text class="title" x="40" y="52">&lt;图名&gt;</text>
+  <text class="subtitle" x="40" y="80">&lt;范围与说明，例如：只画项目自有模块，外部库不画&gt;</text>
+
+  <!-- 分组示例 -->
+  <rect class="group" x="40" y="110" width="1320" height="300" rx="14"/>
+  <text class="group-t" x="60" y="138">&lt;分组名，例如：后端服务层&gt;</text>
+
+  <!-- 节点示例：核心 -->
+  <rect class="core" x="70" y="160" width="260" height="70" rx="10" filter="url(#shadow)"/>
+  <text class="name" x="88" y="188">&lt;模块名&gt;</text>
+  <text class="desc" x="88" y="212">&lt;一句话职责&gt;</text>
+
+  <!-- 节点示例：外部依赖 -->
+  <rect class="ext" x="420" y="160" width="260" height="70" rx="10"/>
+  <text class="name" x="438" y="188">&lt;外部依赖&gt;</text>
+  <text class="desc" x="438" y="212">&lt;用途&gt;</text>
+
+  <!-- 连线示例：调用（实线）、异步（虚线） -->
+  <line class="edge" x1="332" y1="195" x2="416" y2="195" marker-end="url(#arrow)"/>
+  <text class="label" x="350" y="186">调用</text>
+
+  <!-- 图例 -->
+  <g font-size="12" fill="#6B6B6B">
+    <rect x="40" y="850" width="14" height="14" rx="3" fill="#EAF1F8" stroke="#1F4E79"/><text x="60" y="862">核心</text>
+    <rect x="110" y="850" width="14" height="14" rx="3" fill="#F4EEE3" stroke="#D9CBB5"/><text x="130" y="862">周边</text>
+    <rect x="180" y="850" width="14" height="14" rx="3" fill="#FFF4E8" stroke="#E8692E"/><text x="200" y="862">外部依赖</text>
+    <rect x="270" y="850" width="14" height="14" rx="3" fill="#FCD86B" stroke="#C77700"/><text x="290" y="862">需要注意</text>
+    <line x1="360" y1="857" x2="392" y2="857" stroke="#1F4E79" stroke-width="1.8"/><text x="398" y="862">调用</text>
+    <line x1="440" y1="857" x2="472" y2="857" stroke="#8A9AAB" stroke-width="1.6" stroke-dasharray="6,4"/><text x="478" y="862">异步 / 逻辑关联</text>
+  </g>
+  <text class="source" x="1360" y="862" text-anchor="end">来源：&lt;文件&gt;，YYYY-MM-DD</text>
+</svg>
